@@ -18,6 +18,7 @@ li{
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -73,6 +74,13 @@ body{
                         line-height: 24px;
                         color: #FFFFFF;
                         margin-right: 3rem;
+                        cursor: pointer;
+                        transition: all .3s;
+
+                        &:hover{
+                            color: $btn-back;
+                            background: #FFFFFF;
+                        }
                     }
                     .watch-link{
                         font-family: 'Poppins';
@@ -145,7 +153,11 @@ body{
                             line-height: 24px;
                             color: #173A56;
                             cursor: pointer;
-                            
+                            transition: all .3s;
+                            &:hover{
+                                color:white;
+                                background:$btn-back;
+                            }
                         }
                         .btn-up{
                             width: 11rem;
@@ -161,6 +173,13 @@ body{
                             margin-left: 2.4rem;
                             border: none;
                             cursor: pointer;
+                            transition: all .3s;
+
+                            &:hover{
+                                color: $btn-back;
+                                background: #FFFFFF;
+                                border: .5px solid black;
+                            }
                         }
                     }
                     .nav-links ul{
@@ -250,7 +269,12 @@ body{
                 font-size: 16px;
                 line-height: 24px;
                 color: #FFFFFF;
-                
+                transition: all .3s;
+                cursor: pointer;
+                &:hover{
+                    color: $btn-back;
+                    background: #FFFFFF;
+                }
             }
         }
                 //// GROUP MANAGE -----------
@@ -422,6 +446,29 @@ body{
             border: 1px solid black;
             margin-top: 15rem;
             background: $back-2color;
+            text-align: center;
+
+            .contact-btn{
+                margin-top: 3rem;
+                background:$btn-back;
+                border-radius: 4px;
+                width: 21.6rem;
+                height: 5.3rem;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+                border: none;
+                cursor: pointer;
+                transition: all .3s;
+
+                &:hover{
+                    color: $btn-back;
+                    background: #FFFFFF;
+                }
+            }
 
             h1{
                 font-family: 'Poppins';
@@ -539,9 +586,13 @@ body{
         .content{
             width: 100%;
             height: 56rem;
-            
+            margin-top: 15rem;
+
             .top-content{
-                
+                width: 110rem;
+                margin: 0 auto;
+                border: 1px solid black;
+
             }
         }
     }

@@ -15,6 +15,7 @@ li {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -71,6 +72,12 @@ body .container header .header-main .header-left .header-btn {
   line-height: 24px;
   color: #FFFFFF;
   margin-right: 3rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+body .container header .header-main .header-left .header-btn:hover {
+  color: #02897A;
+  background: #FFFFFF;
 }
 body .container header .header-main .header-left .watch-link {
   font-family: "Poppins";
@@ -139,6 +146,11 @@ body .container header .nav .nav-item .nav-links .btn-in {
   line-height: 24px;
   color: #173A56;
   cursor: pointer;
+  transition: all 0.3s;
+}
+body .container header .nav .nav-item .nav-links .btn-in:hover {
+  color: white;
+  background: #02897A;
 }
 body .container header .nav .nav-item .nav-links .btn-up {
   width: 11rem;
@@ -154,6 +166,12 @@ body .container header .nav .nav-item .nav-links .btn-up {
   margin-left: 2.4rem;
   border: none;
   cursor: pointer;
+  transition: all 0.3s;
+}
+body .container header .nav .nav-item .nav-links .btn-up:hover {
+  color: #02897A;
+  background: #FFFFFF;
+  border: 0.5px solid black;
 }
 body .container header .nav .nav-item .nav-links ul {
   display: flex;
@@ -237,6 +255,12 @@ body .container .feature .feature-btn {
   font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+body .container .feature .feature-btn:hover {
+  color: #02897A;
+  background: #FFFFFF;
 }
 body .container .group-manage {
   width: 100%;
@@ -392,6 +416,27 @@ body .container .contact {
   border: 1px solid black;
   margin-top: 15rem;
   background: #E5E5E5;
+  text-align: center;
+}
+body .container .contact .contact-btn {
+  margin-top: 3rem;
+  background: #02897A;
+  border-radius: 4px;
+  width: 21.6rem;
+  height: 5.3rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+body .container .contact .contact-btn:hover {
+  color: #02897A;
+  background: #FFFFFF;
 }
 body .container .contact h1 {
   font-family: "Poppins";
@@ -502,4 +547,10 @@ body .container .contact .c-box-2 .c-right-2 h6 {
 body .container .content {
   width: 100%;
   height: 56rem;
+  margin-top: 15rem;
+}
+body .container .content .top-content {
+  width: 110rem;
+  margin: 0 auto;
+  border: 1px solid black;
 }/*# sourceMappingURL=style.css.map */
