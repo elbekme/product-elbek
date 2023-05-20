@@ -26,7 +26,7 @@ body{
     .container{
         background:$back-color;
         width: 100%;
-        height: 400rem;
+        height: 600rem;
             // ------- HEADER ----------------
         header{
             width: 100%;
@@ -583,6 +583,7 @@ body{
                 }
             }
         } 
+            ///// CONTENT --------
         .content{
             width: 100%;
             height: 56rem;
@@ -591,8 +592,122 @@ body{
             .top-content{
                 width: 110rem;
                 margin: 0 auto;
-                border: 1px solid black;
+                
+                h1{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 34px;
+                    line-height: 51px;
+                    color:$text-color;
+                }
+                p{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color:$text-color;
+                    margin-top: .8rem;
+                }
+            }
+            .content-box{
+                width: 110rem;
+                height: 36rem;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 3.3rem;
 
+                .boxes-c{
+                    width: 35rem;
+                    height: 36rem;
+
+                    P{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: $text-color;
+                        margin-top: 2.4rem;
+                        margin-left: 2.4rem;
+                    }
+                    h1{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 40px;
+                        color:$text-color;
+                        margin-top: 1.3rem;
+                        margin-left: 2.4rem;
+                        transition: all .3s;
+
+                        &:hover{
+                            color: #02897A;
+                        }
+                    }
+                }
+            }
+            .round{
+                width: 110rem;
+                height: 1.6rem;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                margin-top: 6.4rem;
+                p{
+                    background: #EFEFEF;
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    border-radius: 50%;
+                    transition: all .3s;
+                    &:hover{
+                        background: $btn-back;
+                    }
+                }
+            }
+        }
+            //// PRICE ----------
+        .price{
+            height: 60rem;
+            width: 100%;
+            margin-top: 15rem;
+
+            h1{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 34px;
+                line-height: 51px;
+                color: $text-color;
+                text-align: center;
+            }
+            p{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: $text-color;
+                text-align: center;
+                margin-top: .8rem;
+            }
+            .price-box{
+                width: 110rem;
+                display: flex;
+                justify-content: space-between;
+                height: 46rem;
+                margin:0 auto;
+                margin-top: 5rem;
+
+                .p-box{
+                    width: 30rem;
+                    height: 100%;
+                    border: 1px solid black;
+                }
             }
         }
     }

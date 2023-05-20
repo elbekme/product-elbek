@@ -24,7 +24,7 @@ body {
 body .container {
   background: #FFFFFF;
   width: 100%;
-  height: 400rem;
+  height: 600rem;
 }
 body .container header {
   width: 100%;
@@ -552,5 +552,113 @@ body .container .content {
 body .container .content .top-content {
   width: 110rem;
   margin: 0 auto;
+}
+body .container .content .top-content h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  color: #22343D;
+}
+body .container .content .top-content p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+  margin-top: 0.8rem;
+}
+body .container .content .content-box {
+  width: 110rem;
+  height: 36rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.3rem;
+}
+body .container .content .content-box .boxes-c {
+  width: 35rem;
+  height: 36rem;
+}
+body .container .content .content-box .boxes-c P {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #22343D;
+  margin-top: 2.4rem;
+  margin-left: 2.4rem;
+}
+body .container .content .content-box .boxes-c h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: #22343D;
+  margin-top: 1.3rem;
+  margin-left: 2.4rem;
+  transition: all 0.3s;
+}
+body .container .content .content-box .boxes-c h1:hover {
+  color: #02897A;
+}
+body .container .content .round {
+  width: 110rem;
+  height: 1.6rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 6.4rem;
+}
+body .container .content .round p {
+  background: #EFEFEF;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+body .container .content .round p:hover {
+  background: #02897A;
+}
+body .container .price {
+  height: 60rem;
+  width: 100%;
+  margin-top: 15rem;
+}
+body .container .price h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  color: #22343D;
+  text-align: center;
+}
+body .container .price p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #22343D;
+  text-align: center;
+  margin-top: 0.8rem;
+}
+body .container .price .price-box {
+  width: 110rem;
+  display: flex;
+  justify-content: space-between;
+  height: 46rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+body .container .price .price-box .p-box {
+  width: 30rem;
+  height: 100%;
   border: 1px solid black;
 }/*# sourceMappingURL=style.css.map */
