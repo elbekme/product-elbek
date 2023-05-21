@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-$back-color:#FFFFFF;
-$back-2color:#E5E5E5;
-$btn-back:#02897A;
-$btn-white:#BCD0E5;
-$text-color: #22343D;
+    $back-color:#FFFFFF;
+    $back-2color:#E5E5E5;
+    $text-color:#22343D;
+    $btn-back:#02897A;
+    $btn-white:#BCD0E5;
+:root{
+    --back-color:#FFFFFF;
+    --back-2color:#E5E5E5;
+    --text-color:#22343D;
+}
+.dark-theme{
+    --back-color:#000;
+    --back-2color:#000;
+    $btn-back:#02897A;
+    $btn-white:#BCD0E5;
+    --text-color:#fff;
+}
 
 *{
     padding: 0;
@@ -25,13 +37,24 @@ html{
 body{
     font-family: 'Poppins','Inter';
     .container{
-        background:$back-color;
+        background:var(--back-color);
         width: 100%;
-        // height: 600rem;
+        
+        .backtop{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            z-index: 999;
+            position: fixed;
+            right: 2%;
+            top: 90%;
+        }
+        
+
             // ------- HEADER ----------------
         header{
             width: 100%;
-            background:$back-2color;
+            background:var(--back-2color);
             height: 70rem;
 
             .header-main{
@@ -51,7 +74,7 @@ body{
                         font-weight: 700;
                         font-size: 40px;
                         line-height: 60px;
-                        color: $text-color;
+                        color: var(--text-color);
                         margin-top: 10rem;
                     }
                     p{
@@ -60,7 +83,7 @@ body{
                         font-weight: 400;
                         font-size: 18px;
                         line-height: 28px;
-                        color: $text-color;
+                        color:var(--text-color);
                         margin-top: 1.8rem;
                     }
                     .header-btn{
@@ -105,13 +128,17 @@ body{
                 }
             }
 
-            .nav{
-                background: $back-color;
+            #nav{
+                background: var(--back-color);
                 height: 8rem;
                 width: 100%;
                 position: fixed;
                 z-index: 10;
-                .nav-item{
+
+                .navbar-shrink{
+                    padding: 20px 0;
+                }
+                #nav-item{
                     width: 110rem;
                     height: 100%;
                     margin: 0 auto;
@@ -119,6 +146,7 @@ body{
                     align-items: center;
                     justify-content: space-between;
 
+                    
                     .nav-left img{
                         width: 4rem;
                         height: 3.7rem;
@@ -130,7 +158,7 @@ body{
                         font-weight: 700;
                         font-size: 30px;
                         line-height: 28px;
-                        color: #173A56;
+                        color: var(--text-color);
                         margin-left: 1.6rem;
                     }
                     .nav-links{
@@ -194,7 +222,7 @@ body{
                         line-height: 28px;     
                     }
                     .nav-links a{
-                        color: #595c5e;
+                        color:var(--text-color);
                         transition: all .3s;
                         &:hover{
                             color: $text-color;
@@ -204,12 +232,12 @@ body{
             }
         }
                 // FEATURE ---------------
-        .feature{
+        #feature{
             height: 54.4rem;
             width: 100%;
             padding-top: 5rem;
             text-align: center;
-            background: $back-2color;
+            background:var(--back-2color);
             h1{
                 font-family: 'Poppins';
                 font-style: normal;
@@ -218,7 +246,7 @@ body{
                 line-height: 48px;
                 text-align: center;
                 margin:0 33% 0 33%;
-                color:$text-color;
+                color:var(--text-color);
             }
             .feature-box{
                 width: 110rem;
@@ -243,7 +271,7 @@ body{
                         font-weight: 600;
                         font-size: 22px;
                         line-height: 33px;
-                        color:$text-color;
+                        color:var(--text-color);
                         margin-top: 2.5rem;
                     }
                     p{
@@ -252,7 +280,7 @@ body{
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 26px;
-                        color:$text-color;
+                        color:var(--text-color);
                         margin-top: 1.1rem;
                     }
                 }
@@ -301,7 +329,7 @@ body{
                         font-weight: 600;
                         font-size: 16px;
                         line-height: 24px;
-                        color: $text-color;
+                        color:var(--text-color);
                         margin-top: 3rem;
                     }
                     h1{
@@ -310,7 +338,7 @@ body{
                         font-weight: 700;
                         font-size: 32px;
                         line-height: 48px;                        
-                        color:$text-color;
+                        color:var(--text-color);
                         margin-top: 1rem;
                     }
                     p{
@@ -319,7 +347,7 @@ body{
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 26px;
-                        color: $text-color;
+                        color:var(--text-color);
                         margin-top: 2.3rem;
                     }
                 }
@@ -330,7 +358,7 @@ body{
             }
         }
             ///// GROUP CUSTOMER --------
-        .group-customer{
+        #group-customer{
             width: 100%;
             height: 50rem;
             margin-top: 15rem;
@@ -356,7 +384,7 @@ body{
                         font-weight: 600;
                         font-size: 16px;
                         line-height: 24px;
-                        color: $text-color;
+                        color:var(--text-color);
                     }
                     h1{
                         font-family: 'Poppins';
@@ -364,7 +392,7 @@ body{
                         font-weight: 700;
                         font-size: 32px;
                         line-height: 48px;
-                        color:$text-color;
+                        color:var(--text-color);
                         margin-top: 1rem;
                     }
                     p{
@@ -373,7 +401,7 @@ body{
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 26px;
-                        color:$text-color;
+                        color:var(--text-color);
                         margin-top: 2.3rem;
                     }
                     .pp{
@@ -383,13 +411,13 @@ body{
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 26px;
-                        color:$text-color;
+                        color:var(--text-color);
                     }
                 }
             }
         }
             ///// GROUP-COLLAB
-        .group-collab{
+        #group-collab{
             width: 100%;
             height: 45.1rem;
             margin-top: 15rem;
@@ -411,7 +439,7 @@ body{
                         font-weight: 600;
                         font-size: 16px;
                         line-height: 24px;
-                        color:$text-color;  
+                        color:var(--text-color);  
 
                     }
                     h1{
@@ -420,7 +448,7 @@ body{
                         font-weight: 700;
                         font-size: 32px;
                         line-height: 48px;
-                        color:$text-color;
+                        color:var(--text-color);
                         
                     }
                     p{
@@ -429,7 +457,7 @@ body{
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 26px;
-                        color:$text-color;
+                        color:var(--text-color);
                         margin-top: 2.3rem;
                         margin-bottom: 3rem;
                     }
@@ -477,7 +505,7 @@ body{
                 font-size: 32px;
                 line-height: 48px;
                 text-align: center;
-                color:$text-color;
+                color:var(--text-color);
                 margin-top: 5rem;
             }
             p{
@@ -487,7 +515,7 @@ body{
                 font-size: 16px;
                 line-height: 26px;
                 text-align: center;
-                color:$text-color;
+                color:var(--text-color);
                 margin-top: 1.6rem;
                 margin-left: 30%;
                 margin-right: 30%;
@@ -584,7 +612,7 @@ body{
             }
         } 
             ///// CONTENT --------
-        .content{
+        #content{
             width: 100%;
             height: 56rem;
             margin-top: 15rem;
@@ -598,7 +626,7 @@ body{
                     font-weight: 700;
                     font-size: 34px;
                     line-height: 51px;
-                    color:$text-color;
+                    color:var(--text-color);
                 }
                 p{
                     font-family: 'Poppins';
@@ -606,7 +634,7 @@ body{
                     font-weight: 500;
                     font-size: 16px;
                     line-height: 26px;
-                    color:$text-color;
+                    color:var(--text-color);
                     margin-top: .8rem;
                 }
             }
@@ -628,7 +656,7 @@ body{
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 28px;
-                        color: $text-color;
+                        color:var(--text-color);
                         margin-top: 2.4rem;
                         margin-left: 2.4rem;
                     }
@@ -638,7 +666,7 @@ body{
                         font-weight: 700;
                         font-size: 24px;
                         line-height: 40px;
-                        color:$text-color;
+                        color:var(--text-color);
                         margin-top: 1.3rem;
                         margin-left: 2.4rem;
                         transition: all .3s;
@@ -674,7 +702,7 @@ body{
             height: 60rem;
             width: 100%;
             margin-top: 15rem;
-            background: $back-2color;
+            background:var(--back-2color);
 
             h1{
                 font-family: 'Poppins';
@@ -682,7 +710,7 @@ body{
                 font-weight: 700;
                 font-size: 34px;
                 line-height: 51px;
-                color: $text-color;
+                color: var(--text-color);
                 text-align: center;
             }
             p{
@@ -691,7 +719,7 @@ body{
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 24px;
-                color: $text-color;
+                color: var(--text-color);
                 text-align: center;
                 margin-top: .8rem;
             }
@@ -821,7 +849,7 @@ body{
         .clients{
             width: 100%;
             height: 57rem;
-            background: $back-2color;
+            background:var(--back-2color);
             padding-top: 15rem;
 
             h1{
@@ -831,7 +859,7 @@ body{
                 font-size: 34px;
                 line-height: 57px;
                 letter-spacing: 0.2px;
-                color:$text-color;
+                color:var(--text-color);
                 text-align: center;
             }
             p{
@@ -842,7 +870,7 @@ body{
                 line-height: 28px;
                 text-align: center;
                 letter-spacing: 0.2px;
-                color:$text-color;
+                color:var(--text-color);
                 margin-left: 30%;
                 margin-right: 30%;
                 margin-top: 1rem;
@@ -871,7 +899,7 @@ body{
                         font-size: 16px;
                         line-height: 28px;      
                         letter-spacing: 0.2px;
-                        color: #737373;     
+                        color:var(--text-color);     
                         padding-top: 1.6rem;   
                     }
                     .clients-img{
@@ -898,7 +926,7 @@ body{
                                 font-size: 14px;
                                 line-height: 24px;
                                 letter-spacing: 0.2px;
-                                color: #252B42;
+                                color:var(--text-color);
                                 margin-left: 1.4rem;
                             }
                     }
@@ -908,7 +936,7 @@ body{
         .frame{
             width: 100%;
             height: 49.5rem;
-            background: $back-2color;
+            background: var(--back-2color);
             padding-top: 15rem;
 
             .frame-box{
@@ -971,7 +999,7 @@ body{
             width: 100%;
             height: 43rem;
             padding-top: 13rem;
-            background: $back-2color;
+            background: var(--back-2color);
 
             h3{
                 font-family: 'Poppins';
@@ -979,7 +1007,7 @@ body{
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 30px;
-                color:$text-color;
+                color:var(--text-color);
                 text-align: center;
             }
             .footer-box{
@@ -992,7 +1020,7 @@ body{
                 .footer-box_item-1{
                     span{
                         a{
-                            color: #173A56;
+                            color:var(--text-color);
                             font-size: 30px;
                             font-weight: 600;
                             margin-left: 1.6rem;
@@ -1014,7 +1042,7 @@ body{
                         font-weight: 500;
                         font-size: 20px;
                         line-height: 30px;
-                        color: $text-color;
+                        color: var(--text-color);
                         margin-top: 1rem;
                     }
                     .name-input{
@@ -1060,7 +1088,7 @@ body{
                                 font-weight: 500;
                                 font-size: 20px;
                                 line-height: 30px;
-                                color:$text-color;
+                                color:var(--text-color);
                             }
                             a{
                                 font-family: 'Poppins';
@@ -1068,7 +1096,7 @@ body{
                                 font-weight: 400;
                                 font-size: 16px;
                                 line-height: 35px;
-                                color:$text-color;
+                                color:var(--text-color);
                             }
                         }
                             
